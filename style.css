@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Titillium+Web:wght@700&display=swap");
+
+:root {
+  --primary-color: white;
+  --secondary-color: #d6dbdf;
+  --button-background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 690px) {
+  main {
+    width: 100%;
+  }
+}
+
+#background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.2);
+  filter: blur(20px) brightness(0.3);
+  z-index: -1;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: 50px; /* Changer après l'avant */
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  margin: 0;
+  text-align: center;
+}
+
+/* Boutons */
+#buttonContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: var(--button-background);
+  width: 100%;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: transform 0.2s;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button:hover {
+  transform: scale(1.02);
+}
+
+.button img {
+  width: 40px;
+  margin: -15px 0;
+  position: absolute;
+  left: 10px;
+}
+
+#youtubeEmbed {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Avant */
+#aventInfo {
+  position: absolute;
+  background-color: #c0392b;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#aventInfo a {
+  color: white;
+  text-decoration: none;
+}
+
+.blackDiv {
+  background-color: var(--button-background);
+  width: 100%;
+  color: var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.blackDiv h2 {
+  margin: 0;
+}
+
+.blackDiv h2 a {
+  color: white;
+}
+
+.adventSubtitle {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.blackDiv p {
+  text-align: justify;
+}
